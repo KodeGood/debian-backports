@@ -113,6 +113,14 @@ jobs:
 
               cd /work/src
 
+              # --- fetch extra sources required by libavif rules ---
+              if [ "$PKG" = "libavif" ]; then
+                # Clone libargparse into the libavif source root as expected by debian/rules
+                if [ ! -d libargparse ]; then
+                  git clone --depth=1 https://github.com/kmurray/libargparse.git libargparse
+                fi
+              fi
+
               # Install build-deps from debian/control
               mk-build-deps -i -t "apt-get -y --no-install-recommends" -r debian/control
 
