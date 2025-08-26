@@ -1,0 +1,23 @@
+Source: fast-float
+Section: libdevel
+Priority: optional
+Maintainer: Jani Hautakangas <jani@kodegood.com>
+Build-Depends: cmake, debhelper-compat (= 13), python3
+Standards-Version: 4.6.2
+Homepage: https://github.com/fastfloat/fast_float
+Rules-Requires-Root: no
+
+Package: libfast-float-dev
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Implementation of the C++ from_chars functions for float and double types
+ The fast_float library provides fast header-only
+ implementations for the C++ from_chars functions
+ for float and double types. These functions convert
+ ASCII strings representing decimal valuesinto
+ binary types. This library provides exact rounding
+ (including round to even). These fast_float
+ functions run many times faster than comparable
+ number-parsing functions from existing C++ standard
+ libraries.

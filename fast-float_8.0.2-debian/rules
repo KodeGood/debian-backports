@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	      -DCMAKE_INSTALL_DATAROOTDIR=lib
+
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/libfast-float-dev/
+	python3 script/amalgamate.py > fast_float_all.h
