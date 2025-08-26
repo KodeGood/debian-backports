@@ -1,0 +1,379 @@
+libavif (1.2.1-1.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix upstream bug reference for patch for CVE-2025-48175
+  * Add another integer overflow check to makeRoom
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 25 May 2025 07:27:30 +0200
+
+libavif (1.2.1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add integer overflow checks to makeRoom (CVE-2025-48174) (Closes:
+    #1105885)
+  * Add integer overflow check to makeRoom (CVE-2025-48174) (Closes: #1105885)
+  * Fix format errors (CVE-2025-48174) (Closes: #1105885)
+  * Declare *RowBytes as size_t in avifImageRGBToYUV() (CVE-2025-48175)
+    (Closes: #1105883)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 17 May 2025 16:03:36 +0200
+
+libavif (1.2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/*.1: Update prebuilt man pages.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 20 Mar 2025 14:03:55 -0400
+
+libavif (1.2.0-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 03 Mar 2025 17:04:30 -0500
+
+libavif (1.2.0-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/watch: Introduce libargparse copy as component.
+  * debian/clean, debian/rules: Correctly place libargparse copy.
+  * debian/copyright: Updated.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 03 Mar 2025 11:58:44 -0500
+
+libavif (1.1.1-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 26 Sep 2024 17:03:37 -0400
+
+libavif (1.1.1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 26 Sep 2024 14:41:25 -0400
+
+libavif (1.1.0-3) unstable; urgency=high
+
+  * debian/control: Manually record dependency to various dev packages
+    for libavif-dev: libaom-dev, libdav1d-dev, librav1e-dev (some archs),
+    libsvtav1enc-dev, libyuv-dev. (Closes: #1076509)
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 19 Jul 2024 12:25:37 -0400
+
+libavif (1.1.0-2) unstable; urgency=medium
+
+  * Enable SVT-AV1 support unconditionally now that SVT-AV1 is available
+    on all official architectures. Thanks to Adrian Bunk.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 15 Jul 2024 10:32:23 -0400
+
+libavif (1.1.0-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 15 Jul 2024 08:20:39 -0400
+
+libavif (1.1.0-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/rules: Force using system libyuv instead of the embedded copy.
+  * debian/rules: Update buildflags to fix the deprecation warnings.
+  * debian/rules: Correctly enable rav1e on riscv64.
+  * debian/copyright: Updated.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 13 Jul 2024 13:43:12 -0400
+
+libavif (1.0.4-3) unstable; urgency=medium
+
+  * Team upload
+  * debian/: Restrict use of libgav1 to little-endian architectures (Closes:
+    #1070645)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Thu, 09 May 2024 18:57:01 +0200
+
+libavif (1.0.4-2) unstable; urgency=medium
+
+  * Team upload
+  * debian/control: Use pkgconf
+  * debian/: Temporarily disable libgav1 support on s390x
+    libgav1 currently FTBFS on s390x.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 07 Apr 2024 15:49:47 +0200
+
+libavif (1.0.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control: Correctly enable libgav1 support on loong64.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 15 Feb 2024 23:02:10 -0500
+
+libavif (1.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 12 Dec 2023 16:05:28 -0500
+
+libavif (1.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 18 Nov 2023 16:03:40 -0500
+
+libavif (1.0.1-2) unstable; urgency=medium
+
+  * debian/control,debian/rules: Adjust build-dep architecture requirement:
+    + Add loong64 for libgav1-dev.
+    + Add riscv64 loong64 for librav1e-dev.
+    + Add loong64 for librav1e-dev.
+    + Disable hppa hurd-i386 loong64 sparc64 for pandoc.
+  * debian/rules: Use prebuilt man pages when pandoc is disabled.
+    If pandoc is disabled in debian/control, use prebuilt copied
+    located at debian/avifenc.1 and debian/avifdec.1.
+    (Closes: #1053179)
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 11 Oct 2023 19:30:04 -0400
+
+libavif (1.0.1-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 07 Oct 2023 14:38:13 -0400
+
+libavif (1.0.1-1~exp2) experimental; urgency=medium
+
+  * debian/control: Add new build-dependency libsharpyuv-dev 
+    for sharpyuv support.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 20 Sep 2023 14:54:19 -0400
+
+libavif (1.0.1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Package rename due to SONAME bump: libavif15 -> libavif16.
+  * debian/copyright: Update information.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 03 Sep 2023 12:48:32 -0400
+
+libavif (0.11.1-3) unstable; urgency=medium
+
+  * debian/rules: Do not install man pages if they are not built.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 13 Jul 2023 09:54:12 -0400
+
+libavif (0.11.1-2) unstable; urgency=medium
+
+  * d/control,d/rules: Disable pandoc support on architectures
+    with broken pandoc: kfreebsd-*, m68k, powerpc, sh4, x32.
+  * debian/control: Bump Standards-Version to 4.6.2.
+  * debian/control: Migrate from old build-dep:
+    libgdk-pixbuf2.0-dev => libgdk-pixbuf-2.0-dev. (Closes: #1037383)
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 13 Jul 2023 08:37:58 -0400
+
+libavif (0.11.1-1) unstable; urgency=medium
+
+  * New upstream version 0.11.1.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 25 Oct 2022 11:39:25 -0400
+
+libavif (0.11.0-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 19 Oct 2022 17:14:35 -0400
+
+libavif (0.11.0-1~exp1) experimental; urgency=medium
+
+  * New upstream version 0.11.0.
+    + Bump library SONAME to 15.
+  * debian/watch: Properly handle -rc tag.
+  * debian/control: Enable building man pages.
+  * debian/copyright: Refreshed.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 18 Oct 2022 15:52:57 -0400
+
+libavif (0.10.1-3) unstable; urgency=medium
+
+  * debian/: Enable rav1e support. (Closes: #972466)
+  * debian/control: Bump Standards-Version to 4.6.1.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 18 Oct 2022 14:58:51 -0400
+
+libavif (0.10.1-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Remove unused license definitions for Expat.
+
+  [ Boyuan Yang ]
+  * Rebuild against libgav1 (>> 0.18).
+  * debian/rules: Pass -DCMAKE_BUILD_RPATH_USE_ORIGIN=ON via
+    dh_auto_configure override. (Closes: #1003371)
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 28 Jul 2022 14:31:47 -0400
+
+libavif (0.10.1-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 02 May 2022 13:00:03 -0400
+
+libavif (0.10.1-1~exp1) experimental; urgency=medium
+
+  * New upstream version 0.10.1.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 16 Apr 2022 20:56:42 -0400
+
+libavif (0.10.0-1~exp1) experimental; urgency=medium
+
+  * New upstream version 0.10.0.
+  * debian/: Enable svt-av1 encoder flags on supported platforms.
+  * Bump library SONAME to 14.
+  * debian/copyright: Refresh license information.
+  * debian/patches: Dropped, not used anymore.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 11 Apr 2022 13:32:43 -0400
+
+libavif (0.9.3-3) unstable; urgency=medium
+
+  * Enable libyuv support.
+  * Enable libgav1 suppoort for mipsel.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 14 Feb 2022 14:14:42 -0500
+
+libavif (0.9.3-2) unstable; urgency=high
+
+  * Upload to unstable with AOM support. (Closes: #976349)
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 02 Nov 2021 13:09:04 -0400
+
+libavif (0.9.3-2~exp1) experimental; urgency=medium
+
+  * Enable libaom support.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 31 Oct 2021 16:06:31 -0400
+
+libavif (0.9.3-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 31 Oct 2021 10:48:41 -0400
+
+libavif (0.9.3-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump library SONAME to 13 following upstream.
+  * debian/copyright: Refresh copyright information.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 28 Oct 2021 17:01:27 -0400
+
+libavif (0.9.2-2) unstable; urgency=medium
+
+  [ IOhannes m zmölnig (Debian/GNU) ]
+  * Drop unused B-D on libgavl-dev
+  * Add salsa-ci configuration
+
+  [ Boyuan Yang ]
+  * debian/salsa-ci.yml: Use default debian recipe.
+  * debian/control: Bump Standards-Version to 4.6.0.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 18 Sep 2021 13:33:13 -0400
+
+libavif (0.9.2-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 17 Aug 2021 11:47:50 -0400
+
+libavif (0.9.2-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump SONAME to 12 following upstream.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 07 Jul 2021 17:05:58 -0400
+
+libavif (0.9.1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump SONAME to 11 following upstream.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 16 Jun 2021 15:37:26 -0400
+
+libavif (0.8.4-2) unstable; urgency=medium
+
+  * Source-only upload.
+  * Mention that avifenc binary is not working for now.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 07 Dec 2020 13:52:51 -0500
+
+libavif (0.8.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump SONAME to 9 following upstream.
+  * Rename package libavif*-gdk-pixbuf to libavif-gdk-pixbuf since the
+    package always provides the same file.
+    + Breaks+Replaces relationship is updated accordingly.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 29 Nov 2020 21:22:13 -0500
+
+libavif (0.8.3-3) unstable; urgency=high
+
+  * Let libavif8-gdk-pixbuf Breaks+Replaces libavif7-gdk-pixbuf.
+    (Closes: #974593)
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 14 Nov 2020 09:22:15 -0500
+
+libavif (0.8.3-2) unstable; urgency=medium
+
+  * Source-only upload for testing migration.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 12 Nov 2020 09:57:46 -0500
+
+libavif (0.8.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump SONAME to 8 following upstream.
+  * Also enable GAV1 encoding on armel architecture.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 10 Nov 2020 10:08:36 -0500
+
+libavif (0.8.2-4) unstable; urgency=medium
+
+  * Only enable GAV1 encoding on certain architectures where build
+    passes.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 01 Nov 2020 20:59:50 -0500
+
+libavif (0.8.2-3) unstable; urgency=medium
+
+  * Enable GAV1 encoding.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 29 Oct 2020 10:35:02 -0400
+
+libavif (0.8.2-2) unstable; urgency=medium
+
+  * Source-only upload for testing migration.
+  * debian/rules: Document that we are in lack of several codec
+    support.
+    + Enabled: dav1d
+    + TODO: aom (need new version), libgav1, rav1e (need packaging)
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 18 Oct 2020 17:21:31 -0400
+
+libavif (0.8.2-1) unstable; urgency=medium
+
+  * New upstream release.
+    + SONAME change: libavif6 -> libavif7.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 18 Oct 2020 10:26:43 -0400
+
+libavif (0.8.1-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 15 Aug 2020 10:56:04 -0400

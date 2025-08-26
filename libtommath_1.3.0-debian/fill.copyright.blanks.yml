@@ -1,0 +1,12 @@
+---
+LICENSE:
+  override-copyright: ' 2006-2016, Tom St Denis <tomstdenis@gmail.com>'
+  skip: false
+'[^/]*\.[hc]':
+  license: Unlicense
+  skip: false
+bn_mp_root_n:
+  comment: 'Tries to assign copyrithgt to: b <= a and (c+1)**b > a'
+  skip: true
+debian/README.source.org:
+  skip: true

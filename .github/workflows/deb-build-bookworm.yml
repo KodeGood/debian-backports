@@ -14,6 +14,26 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          # --- fast-float ---
+          - pkg: fast-float
+            arch: amd64
+            tarball_url: https://github.com/fastfloat/fast_float/archive/refs/tags/v8.0.2.tar.gz
+            debian_overlay: fast-float_8.0.2-debian
+          - pkg: fast-float
+            arch: arm64
+            tarball_url: https://github.com/fastfloat/fast_float/archive/refs/tags/v8.0.2.tar.gz
+            debian_overlay: fast-float_8.0.2-debian
+
+          # --- libavif ---
+          - pkg: libavif
+            arch: amd64
+            tarball_url: https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.2.1.tar.gz
+            debian_overlay: libavif_1.2.1-debian
+          - pkg: libavif
+            arch: arm64
+            tarball_url: https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.2.1.tar.gz
+            debian_overlay: libavif_1.2.1-debian
+
           # --- libpng ---
           - pkg: libpng
             arch: amd64
@@ -24,15 +44,15 @@ jobs:
             tarball_url: https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.45.tar.gz
             debian_overlay: libpng1.6_1.6.45-debian
 
-          # --- fast-float ---
-          - pkg: fast-float
+          # --- libtommath ---
+          - pkg: libtommath
             arch: amd64
-            tarball_url: https://github.com/fastfloat/fast_float/archive/refs/tags/v8.0.2.tar.gz
-            debian_overlay: fast-float_8.0.2-debian
-          - pkg: fast-float
+            tarball_url: https://github.com/libtom/libtommath/archive/refs/tags/v1.3.0.tar.gz
+            debian_overlay: libtommath_1.3.0-debian
+          - pkg: libtommath
             arch: arm64
-            tarball_url: https://github.com/fastfloat/fast_float/archive/refs/tags/v8.0.2.tar.gz
-            debian_overlay: fast-float_8.0.2-debian
+            tarball_url: https://github.com/libtom/libtommath/archive/refs/tags/v1.3.0.tar.gz
+            debian_overlay: libtommath_1.3.0-debian
 
     steps:
       - name: Checkout
