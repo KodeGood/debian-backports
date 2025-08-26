@@ -44,17 +44,7 @@ jobs:
             tarball_url: https://github.com/pnggroup/libpng/archive/refs/tags/v1.6.45.tar.gz
             debian_overlay: libpng1.6_1.6.45-debian
 
-          # --- libsoup3 ---
-          - pkg: libsoup3
-            arch: amd64
-            tarball_url: https://download.gnome.org/sources/libsoup/3.6/libsoup-3.5.6.tar.xz
-            debian_overlay: libsoup3_3.6.5-debian
-          - pkg: libsoup3
-            arch: arm64
-            tarball_url: https://download.gnome.org/sources/libsoup/3.6/libsoup-3.5.6.tar.xz
-            debian_overlay: libsoup3_3.6.5-debian
-
-            # --- libtommath ---
+          # --- libtommath ---
           - pkg: libtommath
             arch: amd64
             tarball_url: https://github.com/libtom/libtommath/archive/refs/tags/v1.3.0.tar.gz
