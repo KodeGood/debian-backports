@@ -47,11 +47,11 @@ jobs:
           # --- libsoup3 ---
           - pkg: libsoup3
             arch: amd64
-            tarball_url: https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz
+            tarball_url: https://download.gnome.org/sources/libsoup/3.6/libsoup-3.5.6.tar.xz
             debian_overlay: libsoup3_3.6.5-debian
           - pkg: libsoup3
             arch: arm64
-            tarball_url: https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz
+            tarball_url: https://download.gnome.org/sources/libsoup/3.6/libsoup-3.5.6.tar.xz
             debian_overlay: libsoup3_3.6.5-debian
 
             # --- libtommath ---
