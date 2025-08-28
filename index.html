@@ -130,19 +130,27 @@
       <div class="code-container">
         <button id="copyButton" class="copy-button">Copy</button>
         <pre id="codeBlock">
-sudo wget -O /usr/share/keyrings/kodegood-debian-backports.gpg https://kodegood.github.io/debian-backports/kodegood-debian-backports.gpg.key
-sudo chmod 644 /usr/share/keyrings/kodegood-debian-backports.gpg
-echo "deb [signed-by=/usr/share/keyrings/kodegood-debian-backports.gpg] https://kodegood.github.io/debian-backports any main" \
-  | sudo tee /etc/apt/sources.list.d/kodegood-debian-backports.list
-      </pre
-        >
-      </div>
+sudo wget -O /usr/share/keyrings/kodegood-debian-backports.gpg \
+  https://kodegood.github.io/debian-backports/kodegood-debian-backports.gpg.key
 
+sudo chmod 644 /usr/share/keyrings/kodegood-debian-backports.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/kodegood-debian-backports.gpg] https://kodegood.github.io/debian-backports any main" \
+  sudo tee /etc/apt/sources.list.d/kodegood-debian-backports.list
+      </pre>
+      </div>
+      <h3>Provides:</h3>
+      <ul>
+        <li>fast-float 8.0.2</li>
+        <li>libavif 1.2.1</li>
+        <li>libpng 1.6.45 (APNG)</li>
+        <li>libtommath 1.3.0</li>
+      </ul>
       <p>
         See
-        <a href="https://github.com/zhani/webruntime-apt-repo"
-          >the zhani/webruntime-apt-repo GitHub repository</a
-        >
+        <a href="https://github.com/KodeGood/debian-backports">
+          github.com/KodeGood/debian-backports GitHub repository
+        </a>
         for more information.
       </p>
     </div>
