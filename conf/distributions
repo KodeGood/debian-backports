@@ -1,0 +1,7 @@
+Origin: KodeGood
+Label: KodeGood/debian-backports
+Suite: stable
+Codename: bookworm
+Components: main
+Architectures: amd64 arm64
+SignWith: CC23DA828205E3D12D92CF9126016E0D8CFAED08

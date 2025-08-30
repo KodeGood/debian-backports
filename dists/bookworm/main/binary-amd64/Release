@@ -1,0 +1,5 @@
+Archive: stable
+Component: main
+Origin: KodeGood
+Label: KodeGood/debian-backports
+Architecture: amd64

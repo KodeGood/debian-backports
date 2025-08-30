@@ -1,0 +1,423 @@
+Package: libavif-bin
+Source: libavif
+Version: 1.2.1-1.2
+Architecture: amd64
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 559
+Depends: libavif16 (= 1.2.1-1.2), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libjpeg62-turbo (>= 1.3.1), libpng16-16 (>= 1.6.2-1), libstdc++6 (>= 11)
+Homepage: https://github.com/AOMediaCodec/libavif
+Priority: optional
+Section: utils
+Filename: pool/main/liba/libavif/libavif-bin_1.2.1-1.2_amd64.deb
+Size: 170056
+SHA256: 107da64d18da81ecdd21985406527ad51deea12c9421b9f374378555a16bad24
+SHA1: a69c6045231e9b5a879ea65921f4c71b2aee2440
+MD5sum: e0aa601bf7f3796d8f30e3e44f70c6cf
+Description: Library for handling .avif files (utilities)
+ This library aims to be a friendly, portable C implementation of the AV1
+ Image File Format as described in https://aomediacodec.github.io/av1-avif/.
+ .
+ This package provides several utilities provided by the library:
+  - avifdec
+  - avifenc
+
+Package: libavif-bin-dbgsym
+Source: libavif
+Version: 1.2.1-1.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 2704
+Depends: libavif-bin (= 1.2.1-1.2)
+Priority: optional
+Section: debug
+Filename: pool/main/liba/libavif/libavif-bin-dbgsym_1.2.1-1.2_amd64.deb
+Size: 2632412
+SHA256: 9e3dd0957bd553622ca72974f4391aa0496efc355d556d43781a900290e930ee
+SHA1: 8482639ffa7abe1da44af826d0c098e0accae4a2
+MD5sum: 8ea0fe5cbb0c680250e1f0b56315589d
+Description: debug symbols for libavif-bin
+Build-Ids: 1b4c449cc508165921753dc1ec271b30774685c5 3c36b8632b7f6a5f99acba50ae67be706d32e7a8 a55433eb56bdfca25666f92e182745559c0d392f
+
+Package: libavif-dev
+Source: libavif
+Version: 1.2.1-1.2
+Architecture: amd64
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 153
+Depends: libaom-dev (>= 3~), libdav1d-dev, librav1e-dev, libsvtav1enc-dev, libyuv-dev, libavif16 (= 1.2.1-1.2)
+Multi-Arch: same
+Homepage: https://github.com/AOMediaCodec/libavif
+Priority: optional
+Section: libdevel
+Filename: pool/main/liba/libavif/libavif-dev_1.2.1-1.2_amd64.deb
+Size: 59012
+SHA256: 16469b313b5f53c05a87e231edb85e16b13c49ae63af064a9488c3a2c1222545
+SHA1: 0a1f185b9d3b7995ed12623b7aec286ff74c8461
+MD5sum: 8d02f03be6d729e02a97244238a536d0
+Description: Library for handling .avif files (development files)
+ This library aims to be a friendly, portable C implementation of the AV1
+ Image File Format as described in https://aomediacodec.github.io/av1-avif/.
+ .
+ This package provides the development files.
+
+Package: libavif-gdk-pixbuf
+Source: libavif
+Version: 1.2.1-1.2
+Architecture: amd64
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 70
+Depends: libavif16 (= 1.2.1-1.2), libc6 (>= 2.4), libgdk-pixbuf-2.0-0 (>= 2.31.1), libglib2.0-0 (>= 2.35.8)
+Breaks: libavif7-gdk-pixbuf, libavif8-gdk-pixbuf
+Replaces: libavif7-gdk-pixbuf, libavif8-gdk-pixbuf
+Multi-Arch: same
+Homepage: https://github.com/AOMediaCodec/libavif
+Priority: optional
+Section: libs
+Filename: pool/main/liba/libavif/libavif-gdk-pixbuf_1.2.1-1.2_amd64.deb
+Size: 35292
+SHA256: 3ef6c58290c014c92d2015f0123dad853b003ccdbf24d2435417fb4334148992
+SHA1: f5d2558df94a9b87a2e4fe47d83e9e775e6fabe9
+MD5sum: 289a77bcc31388d71b5a6dff9c76224a
+Description: Library for handling .avif files (GDK pixbuf plugin)
+ This library aims to be a friendly, portable C implementation of the AV1
+ Image File Format as described in https://aomediacodec.github.io/av1-avif/.
+ .
+ This package provides the GDK pixbuf plugin for the library.
+
+Package: libavif-gdk-pixbuf-dbgsym
+Source: libavif
+Version: 1.2.1-1.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 32
+Depends: libavif-gdk-pixbuf (= 1.2.1-1.2)
+Multi-Arch: same
+Priority: optional
+Section: debug
+Filename: pool/main/liba/libavif/libavif-gdk-pixbuf-dbgsym_1.2.1-1.2_amd64.deb
+Size: 17484
+SHA256: ca197509ae2d2b46b5a79a21235106aa33bfc05d8b5c928a1afa9ef75b9f7adb
+SHA1: 470871f27eab37cbd8af83f325265ce0944e8a01
+MD5sum: 5f275d6e15a36ce4c0d901ec3a919d6e
+Description: debug symbols for libavif-gdk-pixbuf
+Build-Ids: 49ef6b4d7af6f574d11317dedae88eca2183e066
+
+Package: libavif16
+Source: libavif
+Version: 1.2.1-1.2
+Architecture: amd64
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 284
+Depends: libaom3 (>= 3.2.0), libc6 (>= 2.34), libdav1d6 (>= 0.1.0), libgav1-1 (>= 0.18.0), librav1e0 (>= 0.5.1), libsvtav1enc1 (>= 1.4.1+dfsg), libyuv0 (>= 0.0~git20221206)
+Multi-Arch: same
+Homepage: https://github.com/AOMediaCodec/libavif
+Priority: optional
+Section: libs
+Filename: pool/main/liba/libavif/libavif16_1.2.1-1.2_amd64.deb
+Size: 131724
+SHA256: f30e3fafe0731dfc668284ba5629001dde903484032f2cd0e78caa93f363ec6d
+SHA1: 373227d10cc2827be664b964805184f2d37ad43f
+MD5sum: e3328a4d82a6155063539530507e5521
+Description: Library for handling .avif files
+ This library aims to be a friendly, portable C implementation of the AV1
+ Image File Format as described in https://aomediacodec.github.io/av1-avif/.
+ .
+ This package provides the shared library files.
+
+Package: libavif16-dbgsym
+Source: libavif
+Version: 1.2.1-1.2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 350
+Depends: libavif16 (= 1.2.1-1.2)
+Multi-Arch: same
+Priority: optional
+Section: debug
+Filename: pool/main/liba/libavif/libavif16-dbgsym_1.2.1-1.2_amd64.deb
+Size: 325880
+SHA256: 78da0e64d45c837e7c674d8ad9bae8c9b1e7a8dae8ed07c35822ef5211e70604
+SHA1: 0a10fae21b804f1bb05ebf5e1f7bf84784725e4e
+MD5sum: b20befc73d51cd8884017b27939fe243
+Description: debug symbols for libavif16
+Build-Ids: de457f4bb790335752b2a2aeb33ca38e6853f3c2
+
+Package: libfast-float-dev
+Source: fast-float
+Version: 8.0.2
+Architecture: amd64
+Maintainer: Jani Hautakangas <jani@kodegood.com>
+Installed-Size: 325
+Multi-Arch: foreign
+Homepage: https://github.com/fastfloat/fast_float
+Priority: optional
+Section: libdevel
+Filename: pool/main/f/fast-float/libfast-float-dev_8.0.2_amd64.deb
+Size: 42476
+SHA256: be105944746c40a473baf244d129ace465365c4678a63ac0e6aa92a8ef0bcf22
+SHA1: d7932e889ec8edb998049b7fb3bb2aec59f76b80
+MD5sum: 5591d53639855dbc1c484d11c5d5c77f
+Description: Implementation of the C++ from_chars functions for float and double types
+ The fast_float library provides fast header-only
+ implementations for the C++ from_chars functions
+ for float and double types. These functions convert
+ ASCII strings representing decimal valuesinto
+ binary types. This library provides exact rounding
+ (including round to even). These fast_float
+ functions run many times faster than comparable
+ number-parsing functions from existing C++ standard
+ libraries.
+
+Package: libpng-dev
+Source: libpng1.6
+Version: 1.6.45
+Architecture: amd64
+Maintainer: Jani Hautakangas <jani@kodegood.com>
+Installed-Size: 654
+Depends: libpng16-16 (= 1.6.45), zlib1g-dev
+Recommends: libpng-tools
+Conflicts: libpng12-0-dev, libpng12-dev, libpng2-dev, libpng3-dev
+Breaks: libpng16-dev (<< 1.6.20-3), libpng16-devtools (<< 1.6.21-1)
+Replaces: libpng16-dev (<< 1.6.20-3), libpng16-devtools (<< 1.6.21-1)
+Multi-Arch: same
+Homepage: http://libpng.org/pub/png/libpng.html
+Priority: optional
+Section: libdevel
+Filename: pool/main/libp/libpng1.6/libpng-dev_1.6.45_amd64.deb
+Size: 231224
+SHA256: edcae0548499f956b15dc6cae62d3ef7c25b67bbc8e38a47b6998754dd20f3b8
+SHA1: 30e88cd1a32e444a79ebb7f9b07dd698d0d9cdcb
+MD5sum: cb8d66ba7d83784909fd800121356f31
+Description: PNG library - development (version 1.6)
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains the header and development files needed to build
+ programs and packages using libpng.
+
+Package: libpng-tools
+Source: libpng1.6
+Version: 1.6.45
+Architecture: amd64
+Maintainer: Jani Hautakangas <jani@kodegood.com>
+Installed-Size: 83
+Depends: libc6 (>= 2.34), libpng16-16 (= 1.6.45), zlib1g (>= 1:1.2.3.4)
+Breaks: libpng16-tools (<< 1.6.21-1)
+Replaces: libpng16-tools (<< 1.6.21-1)
+Multi-Arch: foreign
+Homepage: http://libpng.org/pub/png/libpng.html
+Priority: optional
+Section: libdevel
+Filename: pool/main/libp/libpng1.6/libpng-tools_1.6.45_amd64.deb
+Size: 23512
+SHA256: 1340258a2d1a9aa0696efbafe885cd00e3ac071469222e675c74517c873e5d90
+SHA1: 6d55f9e482cf7da22d4b9bb8384e7b370471d993
+MD5sum: f6b6f146703d05e03b4c68e4e7db3827
+Description: PNG library - tools (version 1.6)
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains a program to interact with libpng from the
+ command line.
+
+Package: libpng-tools-dbgsym
+Source: libpng1.6
+Version: 1.6.45
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Jani Hautakangas <jani@kodegood.com>
+Installed-Size: 74
+Depends: libpng-tools (= 1.6.45)
+Priority: optional
+Section: debug
+Filename: pool/main/libp/libpng1.6/libpng-tools-dbgsym_1.6.45_amd64.deb
+Size: 50632
+SHA256: f4f54c11d1ac2e03063038f3565346f2c35a75cc08b6c2d8b32bb27188e8efb6
+SHA1: 96eb89055e7e5a957de06cd11512e56541b07ebf
+MD5sum: d7d406e11453359e145bca3730310ca2
+Description: debug symbols for libpng-tools
+Build-Ids: 87a81404ee566736ff208b996a8a43f1c12c4eac add243dd5b7e6051e33166a7f36954633da08eb7
+
+Package: libpng16-16
+Source: libpng1.6
+Version: 1.6.45
+Architecture: amd64
+Maintainer: Jani Hautakangas <jani@kodegood.com>
+Installed-Size: 239
+Depends: libc6 (>= 2.29), zlib1g (>= 1:1.2.3.4)
+Multi-Arch: same
+Homepage: http://libpng.org/pub/png/libpng.html
+Priority: optional
+Section: libs
+Filename: pool/main/libp/libpng1.6/libpng16-16_1.6.45_amd64.deb
+Size: 99200
+SHA256: 4246d3a56aaaa61f4925db52ac1bd6002b9a17bb651d716b99b24483f813b063
+SHA1: a8363293789982fb94df733973c6a438f7550e10
+MD5sum: 9a68403bcd2f4cb26cc7de8b09669fc8
+Description: PNG library - runtime (version 1.6)
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains the runtime library files needed to run software
+ using libpng.
+
+Package: libpng16-16-dbgsym
+Source: libpng1.6
+Version: 1.6.45
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Jani Hautakangas <jani@kodegood.com>
+Installed-Size: 281
+Depends: libpng16-16 (= 1.6.45)
+Multi-Arch: same
+Priority: optional
+Section: debug
+Filename: pool/main/libp/libpng1.6/libpng16-16-dbgsym_1.6.45_amd64.deb
+Size: 256560
+SHA256: a0f7d572edc2fa38331fe692f378060a7576ae466d28d8eb6d450a6e6995f01d
+SHA1: ab6c38f78f6caf0c9f8a7404c8244a80be2bdfc0
+MD5sum: fc867fa7b21822e55f4197b0560ed390
+Description: debug symbols for libpng16-16
+Build-Ids: 26d2db35fed0d23a9029ae5fc2b54e5442fe0325
+
+Package: libtommath-dev
+Source: libtommath
+Version: 1.3.0-1
+Architecture: amd64
+Maintainer: Debian Rakudo Maintainers <pkg-rakudo-devel@lists.alioth.debian.org>
+Installed-Size: 375
+Depends: libtommath1 (= 1.3.0-1)
+Recommends: libtommath-doc
+Multi-Arch: same
+Homepage: http://www.libtom.net/LibTomMath/
+Priority: optional
+Section: libdevel
+Filename: pool/main/libt/libtommath/libtommath-dev_1.3.0-1_amd64.deb
+Size: 76928
+SHA256: 2d49a3255748f225fac24594bb21eae944d020067bc562d322a979b361ce7285
+SHA1: e2e7c393cfc219a0e3b43613c90ca181509013ed
+MD5sum: 8d312dc34eb833ebbc90e967787712f0
+Description: multiple-precision integer library [development files]
+ LibTomMath is a C language library that provides a vast array of highly
+ optimized functions for number theory; including:
+ .
+  * Simple Algebra (Addition, Subtraction, Multiplication, Division)
+  * Digit Manipulation (shift, binary AND/OR/XOR)
+  * Modular Reduction (Barrett, Montgomery, DR, 2k)
+  * Number Theory
+    - Greatest Common Divisor
+    - Least Common Multiple
+    - Jacobi Symbol Computation
+    - Multiplicative Inverse
+    - Modular Exponentiation
+    - Fermat & Miller-Rabin Primality Tests
+  * Miscellaneous
+    - Root finding over Z
+    - Pseudo-random integers
+    - Signed & Unsigned comparisons
+    - Karatsuba and Toom-Cook multiplication algorithms
+    - Fast Comba based Multiplier, Squaring and Montgomery routines
+ .
+ This package contains the files needed to create programs that use LibTomMath.
+ It is not needed to merely execute programs that use LibTomMath.
+
+Package: libtommath-doc
+Source: libtommath
+Version: 1.3.0-1
+Architecture: all
+Maintainer: Debian Rakudo Maintainers <pkg-rakudo-devel@lists.alioth.debian.org>
+Installed-Size: 453
+Multi-Arch: foreign
+Homepage: http://www.libtom.net/LibTomMath/
+Priority: optional
+Section: doc
+Filename: pool/main/libt/libtommath/libtommath-doc_1.3.0-1_all.deb
+Size: 453920
+SHA256: da94e03dda8135c3ebc974e5fbc28d602af27609b1e3725baaf453e0ae7a4829
+SHA1: 511e995cbff7de4046bfca84a068cd43e5bd3cd4
+MD5sum: 724e400186ed6b2b15b4b7adfe1a9709
+Description: multiple-precision integer library [documentation]
+ LibTomMath is a C language library that provides a vast array of highly
+ optimized functions for number theory; including:
+ .
+  * Simple Algebra (Addition, Subtraction, Multiplication, Division)
+  * Digit Manipulation (shift, binary AND/OR/XOR)
+  * Modular Reduction (Barrett, Montgomery, DR, 2k)
+  * Number Theory
+    - Greatest Common Divisor
+    - Least Common Multiple
+    - Jacobi Symbol Computation
+    - Multiplicative Inverse
+    - Modular Exponentiation
+    - Fermat & Miller-Rabin Primality Tests
+  * Miscellaneous
+    - Root finding over Z
+    - Pseudo-random integers
+    - Signed & Unsigned comparisons
+    - Karatsuba and Toom-Cook multiplication algorithms
+    - Fast Comba based Multiplier, Squaring and Montgomery routines
+ .
+ This package contains the documentation for the LibTomMath library.
+
+Package: libtommath1
+Source: libtommath
+Version: 1.3.0-1
+Architecture: amd64
+Maintainer: Debian Rakudo Maintainers <pkg-rakudo-devel@lists.alioth.debian.org>
+Installed-Size: 153
+Depends: libc6 (>= 2.25)
+Multi-Arch: same
+Homepage: http://www.libtom.net/LibTomMath/
+Priority: optional
+Section: libs
+Filename: pool/main/libt/libtommath/libtommath1_1.3.0-1_amd64.deb
+Size: 64060
+SHA256: 6ed6b468616d1ed609ce961726021d6851f68b8fc60e57bc63a15c9606d96a90
+SHA1: c7d5cad957fa3ec23d470bfa227d1e10b0334134
+MD5sum: 76545b2d8d3ccbbe7410129592230459
+Description: multiple-precision integer library [runtime]
+ LibTomMath is a C language library that provides a vast array of highly
+ optimized functions for number theory; including:
+ .
+  * Simple Algebra (Addition, Subtraction, Multiplication, Division)
+  * Digit Manipulation (shift, binary AND/OR/XOR)
+  * Modular Reduction (Barrett, Montgomery, DR, 2k)
+  * Number Theory
+    - Greatest Common Divisor
+    - Least Common Multiple
+    - Jacobi Symbol Computation
+    - Multiplicative Inverse
+    - Modular Exponentiation
+    - Fermat & Miller-Rabin Primality Tests
+  * Miscellaneous
+    - Root finding over Z
+    - Pseudo-random integers
+    - Signed & Unsigned comparisons
+    - Karatsuba and Toom-Cook multiplication algorithms
+    - Fast Comba based Multiplier, Squaring and Montgomery routines
+ .
+ This package contains the library needed to run programs that
+ use LibTomMath.
+
+Package: libtommath1-dbgsym
+Source: libtommath
+Version: 1.3.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Rakudo Maintainers <pkg-rakudo-devel@lists.alioth.debian.org>
+Installed-Size: 130
+Depends: libtommath1 (= 1.3.0-1)
+Multi-Arch: same
+Priority: optional
+Section: debug
+Filename: pool/main/libt/libtommath/libtommath1-dbgsym_1.3.0-1_amd64.deb
+Size: 109012
+SHA256: 1790c65b31d3478c786f0fc4d525aee381dbe6b444717b83cf49de96bfc519ba
+SHA1: 4930b6403cc7ce03e02e265cf36396d3d47512ea
+MD5sum: b4f83dc7e847ca291106b985032721f7
+Description: debug symbols for libtommath1
+Build-Ids: 9ce949a057d182dee9c534f149b1c226ced3a725
+
